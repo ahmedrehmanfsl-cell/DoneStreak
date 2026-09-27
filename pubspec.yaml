@@ -1,0 +1,34 @@
+name: donestreak
+description: "DoneStreak — snap proof of your daily commitments, keep the streak alive."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  # Official first-party Flutter plugins only — no analytics, ads, auth
+  # or crash-reporting SDKs of any kind. Everything below is maintained
+  # by the Flutter team / flutter.dev-listed and runs 100% on-device.
+  image_picker: ^1.1.2      # native camera capture
+  path_provider: ^2.1.4     # local app-documents directory
+  shared_preferences: ^2.3.2 # local key-value storage (streak + settings)
+  intl: ^0.19.0             # date formatting only, no network
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/app_icon.png
+flutter_launcher_icons:
+  image_path: "assets/icon/app_icon.png"
+  ios: true
+  android: true
